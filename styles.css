@@ -189,7 +189,11 @@ body {
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
   }
 }
-
+@media screen and (max-width: 350px) {
+  .header {
+    padding: 10px 5px 10px 0px;
+  }
+}
 /*🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼*/
 
 #section1,
