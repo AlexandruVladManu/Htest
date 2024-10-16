@@ -28,7 +28,7 @@ body {
 }
 
 .header-container {
-  /* position: sticky; */
+  position: sticky;
   top: 0;
   z-index: 1000;
 }
@@ -56,17 +56,19 @@ body {
   /* margin-left: 3vw; */
   margin-left: 2rem;
 }
-.logo {
-  height: 1.5rem;
+.logo-complete img {
+  /* width: 100%;
+  height: auto; */
+  width: 60px;
+  object-fit: contain;
 }
-
 .logo a {
   display: block;
 }
-.logo a img {
+/* .logo a img {
   display: block;
   width: 100%;
-}
+} */
 .navigation {
   display: flex;
   justify-content: space-between;
