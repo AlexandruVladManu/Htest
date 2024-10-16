@@ -27,9 +27,6 @@ body {
   );
 }
 
-/*🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽*/
-/* HEADER */
-
 .header-container {
   position: sticky;
   top: 0;
@@ -56,7 +53,8 @@ body {
   display: flex;
   align-items: center;
   gap: 0.2rem;
-  margin-left: 3vw;
+  /* margin-left: 3vw; */
+  /* margin-left: 2rem; */
 }
 .logo {
   height: 1.5rem;
@@ -194,7 +192,6 @@ body {
     padding: 10px 5px 10px 0px;
   }
 }
-/*🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼*/
 
 #section1,
 #section2,
