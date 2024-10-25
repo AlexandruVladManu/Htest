@@ -30,6 +30,6 @@ function openLinkMenu() {
 }
 function openLinkEvents() {
   setTimeout(function () {
-    window.open("https://www.facebook.com/hiddencaffebar", "_blank");
+    window.open("https://www.facebook.com/share/rrSe7rwQhRbrknHm/", "_blank");
   }, 500); // 500 milliseconds = 0.5 seconds
 }
