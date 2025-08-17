@@ -1,35 +1,98 @@
-const hamburger = document.querySelector(".hamburger");
-// const navMenu = document.querySelector(".nav-menu");
+const scrollArrow = document.getElementById("scrollArrow");
+const progressCircle = document.querySelector(".progress-ring__progress");
+const radius = progressCircle.r.baseVal.value;
+const circumference = 2 * Math.PI * radius;
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
+progressCircle.style.strokeDasharray = `${circumference} ${circumference}`;
+progressCircle.style.strokeDashoffset = circumference;
+
+/**
+ * Sets the stroke-dashoffset of the progress circle to a given percentage.
+ * @param {number} percent - a number between 0 and 100 representing the percentage of the circle to fill
+ */
+function setProgress(percent) {
+  const offset = circumference - (percent / 100) * circumference;
+  progressCircle.style.strokeDashoffset = offset;
+}
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrollPercent = (scrollTop / docHeight) * 100;
+
+  setProgress(scrollPercent);
+
+  // Show after scrolling 50px, hide near bottom
+  if (scrollTop > 50 && scrollPercent < 99) {
+    scrollArrow.classList.add("visible");
+  } else {
+    scrollArrow.classList.remove("visible");
+  }
 });
 
-document.querySelectorAll(".nav-link").forEach((n) =>
-  n.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-  })
-);
-
-src = "https://code.jquery.com/jquery-3.7.1.min.js";
-integrity = "sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=";
-crossorigin = "anonymous";
-
-src = "jquery.flipster.min.js";
-
-$(".carousel").flipster({
-  style: "carousel",
-  spacing: -0.3,
+// Smooth scroll to bottom when clicked
+scrollArrow.addEventListener("click", () => {
+  window.scrollTo({
+    top: document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 
-function openLinkMenu() {
-  setTimeout(function () {
-    window.open("https://online.fliphtml5.com/qnpjy/hsht/", "_blank");
-  }, 500); // 500 milliseconds = 0.5 seconds
-}
-function openLinkEvents() {
-  setTimeout(function () {
-    window.open("https://www.facebook.com/share/rrSe7rwQhRbrknHm/", "_blank");
-  }, 500); // 500 milliseconds = 0.5 seconds
-}
+const swiper = new Swiper(".swiper-slider", {
+  // Optional parameters
+  centeredSlides: true,
+  slidesPerView: 1,
+  grabCursor: true,
+  freeMode: false,
+  loop: true,
+  mousewheel: false,
+  keyboard: {
+    enabled: true,
+  },
+
+  // Enabled autoplay mode
+  autoplay: {
+    delay: 900000,
+    disableOnInteraction: false,
+  },
+
+  // If we need pagination
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   dynamicBullets: false,
+  //   clickable: true,
+  // },
+
+  // If we need navigation
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    400: {
+      slidesPerView: 1.1,
+      spaceBetween: 20,
+    },
+    520: {
+      slidesPerView: 1.6,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 1.9,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 2.6,
+      spaceBetween: 20,
+    },
+    1100: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
+});

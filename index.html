@@ -3,536 +3,383 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HIDDEN</title>
-    <meta
-      name="description"
-      content="Visit Hidden Café & Bar in Dej for the best drinks, live music events, and a great atmosphere with friends. Contact us today for event bookings!"
-    />
 
-    <link rel="icon" type="image/x-icon" href="imgs/Hidden Favi 1.webp" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <title>Reunited</title>
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="jquery.flipster.min.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <div class="header-container">
-        <header class="header">
-          <div class="logo-complete">
+    <!-- NAVBAR -->
+    <div class="header-container">
+      <header class="header">
+        <div class="logo">
+          <a href="#section1">
             <img
-              class="logo"
-              src="imgs/logo.webp"
-              alt="Hidden Café & Bar Logo"
+              class="mview"
+              src="./imgs/logo.png"
+              alt="Image 1"
+              width="280"
+              height="60"
             />
-            <a href="#section1" class="nav-branding">HIDDEN</a>
-          </div>
+            <img
+              class="doctor"
+              src="./imgs/sigla-Dr.png"
+              alt="Image 2"
+              width="220"
+              height="60"
+            />
+          </a>
+        </div>
 
-          <nav class="navigation">
-            <input type="checkbox" class="toggle-menu" name="box" />
-
-            <div class="hamburger"></div>
-
-            <ul class="menu-drop">
-              <li><a href="#section1">Home</a></li>
-              <li><a href="#section2">About</a></li>
-              <li><a href="#section3">Menu</a></li>
-              <li><a href="#section4">Events</a></li>
-              <li><a href="#section5">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
-      </div>
-      <main class="parent">
-        <section id="section1">
-          <div class="row">
-            <div class="div1">
-              <div class="hero-text-box">
-                <h1 class="heading-primary">True Friendship</h1>
-                <p class="hero-description">
-                  Good Drinks. Good Music. Good People.
-                </p>
-              </div>
-            </div>
-            <div class="div2">
-              <img
-                src="imgs/hero.webp"
-                alt="Hidden Café & Bar, Drinks, Music, and Friendship"
-              />
-            </div>
-          </div>
-        </section>
-
-        <section id="section2">
-          <div class="row">
-            <div class="div3">
-              <div class="about-text-box">
-                <h2 class="heading-primary-story">Our Story</h2>
-                <div class="bar"></div>
-              </div>
-            </div>
-            <div class="div4">
-              <img
-                src="imgs/about.webp"
-                alt="about image Descriptive about section text with a coffee and a picture as backround"
-              />
-            </div>
-          </div>
-        </section>
-
-        <section id="section3">
-          <div class="row">
-            <div class="div5">
-              <div class="menu-text-box" onclick="openLinkMenu()">
-                <div class="centered centered-btn">
-                  <img
-                    src="imgs/menuBtnImg.webp"
-                    alt="Menu Image Cocktail on a bar counter with bottles in the background"
-                    class="menu-image shadow"
-                  />
-                  <h2 class="heading-primary menu">Menu</h2>
-                </div>
-              </div>
-            </div>
-            <div class="div6">
-              <div class="carousel-wrapper">
-                <div class="carousel-hero">
-                  <div class="carousel">
-                    <ul>
-                      <li>
-                        <img
-                          src="imgs/1.webp"
-                          alt="a cup o coffee"
-                          loading="lazy"
-                        />
-                      </li>
-                      <li>
-                        <img
-                          src="imgs/2.webp"
-                          alt="a green cocktail"
-                          loading="lazy"
-                        />
-                      </li>
-                      <li>
-                        <img
-                          src="imgs/3.webp"
-                          alt="beverages on a shelf"
-                          loading="lazy"
-                        />
-                      </li>
-                      <li>
-                        <img
-                          src="imgs/4.webp"
-                          alt="3 beverage dispensers"
-                          loading="lazy"
-                        />
-                      </li>
-                      <li>
-                        <img
-                          src="imgs/5.webp"
-                          alt="some beverages"
-                          loading="lazy"
-                        />
-                      </li>
-                      <li>
-                        <img
-                          src="imgs/6.webp"
-                          alt="cocktail with flower decorations around"
-                          loading="lazy"
-                        />
-                      </li>
-                      <li>
-                        <img
-                          src="imgs/7.webp"
-                          alt="cocktail on a bar counter with beverages on a shelf as background"
-                          loading="lazy"
-                        />
-                      </li>
-                      <li>
-                        <img
-                          src="imgs/8.webp"
-                          alt="5 type of coffee"
-                          loading="lazy"
-                        />
-                      </li>
-                      <li>
-                        <img
-                          src="imgs/9.webp"
-                          alt="a glass with coffee specialty"
-                          loading="lazy"
-                        />
-                      </li>
-                      <li>
-                        <img
-                          src="imgs/10.webp"
-                          alt="espresso machine, a large coffee bag and a cup of coffee"
-                          loading="lazy"
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="section4">
-          <div class="row">
-            <div class="div7">
-              <div class="menu-text-box" onclick="openLinkEvents()">
-                <div class="centered centered-events centered-btn">
-                  <img
-                    src="imgs/eventsBtnImg.webp"
-                    alt="Events button image A guitarist playing"
-                    class="menu-image shadow"
-                  />
-                  <h2 class="heading-primary menu">Events</h2>
-                </div>
-              </div>
-            </div>
-            <div class="div8">
-              <div class="containerEv">
-                <div class="box">
-                  <img src="imgs/1e.webp" alt="DJ mixing" loading="lazy" />
-                </div>
-                <div class="box">
-                  <img src="imgs/4e.webp" alt="DJ mixing" loading="lazy" />
-                </div>
-
-                <div class="box">
-                  <img src="imgs/3e.webp" alt="DJ mixing" loading="lazy" />
-                </div>
-
-                <div class="box">
-                  <img
-                    src="imgs/14e.webp"
-                    alt="Group of friends laughing at a table"
-                    loading="lazy"
-                  />
-                </div>
-
-                <div class="box">
-                  <img
-                    src="imgs/2e.webp"
-                    alt="A guitarist playing"
-                    loading="lazy"
-                  />
-                </div>
-
-                <div class="box">
-                  <img src="imgs/5e.webp" alt="DJ mixing" loading="lazy" />
-                </div>
-
-                <div class="box">
-                  <img
-                    src="imgs/6e.webp"
-                    alt="A guitarist playing"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="box">
-                  <img src="imgs/7e.webp" alt="A microphone" loading="lazy" />
-                </div>
-                <div class="box">
-                  <img
-                    src="imgs/8e.webp"
-                    alt="A beverage being poured"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="box">
-                  <img
-                    src="imgs/9e.webp"
-                    alt="A man preparing a coktail"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="box">
-                  <img src="imgs/10e.webp" alt="A coktail" loading="lazy" />
-                </div>
-                <div class="box">
-                  <img
-                    src="imgs/11e.webp"
-                    alt="Man mixing a cocktail"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="box">
-                  <img src="imgs/12e.webp" alt="A coktail" loading="lazy" />
-                </div>
-                <div class="box">
-                  <img
-                    src="imgs/13e.webp"
-                    alt="Photo of two people clinking glasses"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="box">
-                  <img src="imgs/1e.webp" alt="DJ mixing" loading="lazy" />
-                </div>
-                <div class="box">
-                  <img
-                    src="imgs/2e.webp"
-                    alt="A guitarist playing"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="box">
-                  <img src="imgs/3e.webp" alt="DJ mixing" loading="lazy" />
-                </div>
-                <div class="box">
-                  <img
-                    src="imgs/14e.webp"
-                    alt="Group of friends laughing at a table"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="box">
-                  <img src="imgs/4e.webp" alt="DJ mixing" loading="lazy" />
-                </div>
-                <div class="box">
-                  <img src="imgs/5e.webp" alt="DJ mixing" loading="lazy" />
-                </div>
-                <div class="box">
-                  <img
-                    src="imgs/6e.webp"
-                    alt="A guitarist playing"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="box">
-                  <img src="imgs/7e.webp" alt="A microphone" loading="lazy" />
-                </div>
-                <div class="box">
-                  <img
-                    src="imgs/8e.webp"
-                    alt="A beverage being poured"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="box">
-                  <img
-                    src="imgs/9e.webp"
-                    alt="A man preparing a coktail"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="box">
-                  <img src="imgs/10e.webp" alt="A coktail" loading="lazy" />
-                </div>
-                <div class="box">
-                  <img
-                    src="imgs/11e.webp"
-                    alt="Man mixing a cocktail"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="box">
-                  <img src="imgs/12e.webp" alt="A coktail" loading="lazy" />
-                </div>
-                <div class="box">
-                  <img
-                    src="imgs/13e.webp"
-                    alt="Photo of two people clinking glasses"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="section5">
-          <div class="row">
-            <div class="div9">
-              <div class="contact">
-                <p class="titleContact">Contact</p>
-                <div class="social-icons">
-                  <a
-                    href="https://www.facebook.com/hiddencaffebar"
-                    target="_blank"
-                  >
-                    <i class="fab fa-facebook"></i>
-                  </a>
-
-                  <a
-                    href="https://www.tiktok.com/@hidden9184?_t=8qNUeDYXmzZ&_r=1"
-                    target="_blank"
-                  >
-                    <i class="fab fa-tiktok"></i>
-                  </a>
-
-                  <a
-                    href="https://www.instagram.com/barhiddencafe/"
-                    target="_blank"
-                  >
-                    <i class="fab fa-instagram"></i>
-                  </a>
-
-                  <a
-                    href="https://g.page/r/CX5iXeCy4WwuEAE/review"
-                    target="_blank"
-                  >
-                    <i class="fab fa-google"></i>
-                  </a>
-                </div>
-                <p class="address-title">Address</p>
-                <p class="street">
-                  Str: Avram Iancu, No. 5,<br />
-                  City: Dej.
-                </p>
-                <p class="opening">Opening Hours</p>
-
-                <div class="days-hours">
-                  <ul class="days">
-                    <li>Mon</li>
-                    <li>Tue</li>
-                    <li>Wen</li>
-                    <li>Thu</li>
-                    <li>Fri</li>
-                    <li>Sat</li>
-                    <li>Sun</li>
-                  </ul>
-                  <ul class="hours">
-                    <li>7:00 am - 11:00 pm</li>
-                    <li>7:00 am - 11:00 pm</li>
-                    <li>7:00 am - 11:00 pm</li>
-                    <li>7:00 am - 11:00 pm</li>
-                    <li>7:00 am - 02:00 am</li>
-                    <li>6:00 pm - 04:00 am</li>
-                    <li>CLOSED</li>
-                  </ul>
-                </div>
-                <div class="phone-group">
-                  <p class="phone">Phone:</p>
-                  <p class="phone-number">0728 855 519</p>
-                </div>
-
-                <p class="email">
-                  <!-- creators.cluj@gmail.com -->
-                  Email:
-                  <a href="mailto:info@mysite.com">creators.cluj@gmail.com</a>
-                </p>
-                <p class="lost">If you're lost</p>
-                <div class="google-map">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1466.7043215409733!2d23.87683192524916!3d47.14089019018417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4749b95c4ebf6573%3A0x2e6ce1b2e05d627e!2sHidden%20Pub!5e1!3m2!1sro!2sro!4v1728407186254!5m2!1sro!2sro"
-                    width="400"
-                    height="300"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-            <div class="div10">
-              <div class="rules-partners">
-                <div class="rules-group">
-                  <p class="rulesTitle">Regulile Barului:</p>
-                  <ol class="rulesList">
-                    <li>
-                      Vârsta legală: vârsta legală pentru consumul de alcool
-                      este de 18 ani.
-                    </li>
-                    <li>
-                      Servirea și plata se fac exclusiv la bar. Plata se face la
-                      momentul comenzii.
-                    </li>
-                    <li>
-                      Refuzul de servire: Barmanii au dreptul să refuze servirea
-                      clienților care sunt sub influența majoră a băuturilor
-                      alcoolice, a altor substanțe sau care nu respectă regulile
-                      stabilite ale localului.
-                    </li>
-                    <li>
-                      Conduita clientului: cei care devin agresivi verbal sau
-                      fizic, cei care nu respectă conduita barului, cei care
-                      deranjează liniștea celorlalți clienți vor fi avertizați
-                      și ulterior invitați să părăsească incinta localului.
-                    </li>
-                    <li>
-                      Este interzisă ieșirea cu băuturi alcoolice din incinta
-                      localului, mesele din exterior fiind destinate consumului
-                      de tutun și băuturi nonalcoolice. Nerespectarea acestei
-                      reguli duce la sancționarea de către autorități.
-                    </li>
-                    <li>
-                      Este interzisă intrarea cu băuturi achiziționate din afara
-                      localului.
-                    </li>
-                    <li>
-                      Muzica: barmanul nu furnizează servicii de dedicații, iar
-                      muzica este doar responsabilitatea acestuia și nu a
-                      clienților.
-                    </li>
-                    <li>
-                      Respectarea orei de închidere: Respectarea strictă a
-                      orelor de funcționare.
-                    </li>
-                  </ol>
-                </div>
-                <div class="partners">
-                  <p>Our Partners:</p>
-                  <div class="partnersLink">
-                    <a href="https://ntnews.ro/" target="_blank">
-                      <img
-                        src="imgs/NTnews-1.webp"
-                        alt="NTnews-LOGO"
-                        loading="lazy"
-                      />
-                    </a>
-                    <a href="https://dsgline.ro/" target="_blank">
-                      <img
-                        src="imgs/DSG-LINE-1.webp"
-                        alt="DSG-LINE-LOGO"
-                        loading="lazy"
-                      />
-                    </a>
-                    <a href="https://www.costacoffee.ro" target="_blank">
-                      <img
-                        src="imgs/costa-1.webp"
-                        alt="Costa-LOGO"
-                        loading="lazy"
-                      />
-                    </a>
-                    <a href="https://terasaweekend.ro/" target="_blank">
-                      <img
-                        src="imgs/weekend-1.webp"
-                        alt="Weekend-LOGO"
-                        loading="lazy"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="rightsReserved">
-        Designed and created by
-        <span class="name">Alexandru Vlad Manu</span> © All rights reserved.
-        Please do not claim as your own.
-      </footer>
+        <nav class="navigation">
+          <input type="checkbox" class="toggle-menu" name="box" />
+          <div class="hamburger"></div>
+          <ul class="menu-drop">
+            <li><a href="#section1">Acasa</a></li>
+            <li><a href="#section2">Despre</a></li>
+            <li><a href="#section3">Servicii</a></li>
+            <li><a href="#section4">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="jquery.flipster.min.js"></script>
+    <!-- SECTION 1 -->
+    <section class="parallax" id="section1">
+      <div class="bg-image"></div>
+      <div class="content">
+        <h1 class="title">M VIEW SERVICE</h1>
+      </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="parallax" id="section2">
+      <div
+        class="bg-image"
+        style="background-image: url('./imgs/about-mic.webp')"
+      ></div>
+      <div class="content">
+        <div class="about_wrapper">
+          <div class="about_text">
+            <div>
+              <p class="about_title">DESPRE NOI</p>
+            </div>
+            <div>
+              <p class="subtitle">
+                Experiență, promptitudine și seriozitate la fiecare serviciu
+                oferit.
+              </p>
+            </div>
+            <div>
+              <p class="about_para">
+                Cu peste 10 ani de experiență în domeniu, oferim servicii auto
+                rapide și corecte, respectând cele mai înalte standarde. Punem
+                accent pe calitate, transparență și relații de încredere cu
+                fiecare client care ne trece pragul.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="parallax" id="section3">
+      <div class="bg-image services-bg"></div>
+      <div class="content background-img">
+        <!-- 🟥🟩🟥🟩🟥🟩🟥 -->
+        <!-- <h2>Our Services</h2>
+        <p>
+          From custom web development to digital strategy, we help businesses
+          grow with modern, scalable solutions.
+        </p> -->
+        <div class="section-carousel slider-section">
+          <div class="slider-container slider-column">
+            <div class="swiper swiper-slider">
+              <div class="swiper-wrapper">
+                <div class="card swiper-slide" alt="Swiper">
+                  <div class="image-wrapper">
+                    <img src="./imgs/anvelope.jpg" alt="Image" />
+                  </div>
+                  <div class="card-content">
+                    <h2>ANVELOPE</h2>
+                    <p class="card-text">
+                      Schimbi anvelopele? Le montăm corect și rapid, ca să mergi
+                      fără griji.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card swiper-slide" alt="Swiper">
+                  <div class="image-wrapper">
+                    <img src="./imgs/clima.jpeg" alt="Image" />
+                  </div>
+                  <div class="card-content">
+                    <h2>CLIMATIZARE</h2>
+                    <p class="card-text">
+                      Nu mai răcește sau miroase urât? Curățăm instalația și îți
+                      dăm aer proaspăt.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card swiper-slide" alt="Swiper">
+                  <div class="image-wrapper">
+                    <img src="./imgs/diagnostic.jpg" alt="Image" />
+                  </div>
+                  <div class="card-content">
+                    <h2>DIAGNOZA</h2>
+                    <p class="card-text">
+                      Aprins un martor în bord? Verificăm la tester și îți
+                      spunem exact problema.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card swiper-slide" alt="Swiper">
+                  <div class="image-wrapper">
+                    <img src="./imgs/directie.jpg" alt="Image" />
+                  </div>
+                  <div class="card-content">
+                    <h2>DIRECTIE</h2>
+                    <p class="card-text">
+                      Ține volanul strâmb? Trage într-o parte? Venim cu cheia și
+                      o reglăm pe loc.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card swiper-slide" alt="Swiper">
+                  <div class="image-wrapper">
+                    <img src="./imgs/electrica.webp" alt="Image" />
+                  </div>
+                  <div class="card-content">
+                    <h2>ELECTRICA</h2>
+                    <p class="card-text" lang="ro">
+                      Nu pornește? Verificăm instalația electrică și rezolvăm
+                      rapid problema.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card swiper-slide" alt="Swiper">
+                  <div class="image-wrapper">
+                    <img src="./imgs/mecanica.jpg" alt="Image" />
+                  </div>
+                  <div class="card-content">
+                    <h2>MECANICA</h2>
+                    <p class="card-text">
+                      Scârțâie sau vibrează? Verificăm mecanica și o facem să
+                      meargă perfect.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card swiper-slide" alt="Swiper">
+                  <div class="image-wrapper">
+                    <img src="./imgs/piese-auto.webp" alt="Image" />
+                  </div>
+                  <div class="card-content">
+                    <h2>PIESE AUTO</h2>
+                    <p class="card-text">
+                      Ai nevoie de piese? Le găsim, le montăm și te pui imediat
+                      pe drum.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card swiper-slide" alt="Swiper">
+                  <div class="image-wrapper">
+                    <img src="./imgs/itp.jpg" alt="Image" />
+                  </div>
+                  <div class="card-content">
+                    <h2>STATIE ITP</h2>
+                    <p class="card-text">
+                      Aproape expiră ITP-ul? Îl facem rapid și pleci fără stres.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <span class="swiper-pagination"></span> -->
+              <span class="swiper-button-prev"></span>
+              <span class="swiper-button-next"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section class="parallax contact-section" id="section4">
+      <div class="bg-image contact-bg"></div>
+      <div class="contact-wrapper">
+        <div class="content"></div>
+
+        <!-- Marquee -->
+        <div class="marquee" aria-label="Anunț">
+          <div class="marquee__track">
+            <!-- Set 1 -->
+            <span class="marquee__text"
+              >Oferim diagnoză gratuită mașinilor reparate la noi</span
+            >
+            <span class="marquee__text"
+              >Oferim diagnoză gratuită mașinilor reparate la noi</span
+            >
+            <span class="marquee__text"
+              >Oferim diagnoză gratuită mașinilor reparate la noi</span
+            >
+            <span class="marquee__text"
+              >Oferim diagnoză gratuită mașinilor reparate la noi</span
+            >
+
+            <!-- Set 2 (duplicate of Set 1, hidden from screen readers) -->
+            <span class="marquee__text" aria-hidden="true"
+              >Oferim diagnoză gratuită mașinilor reparate la noi</span
+            >
+            <span class="marquee__text" aria-hidden="true"
+              >Oferim diagnoză gratuită mașinilor reparate la noi</span
+            >
+            <span class="marquee__text" aria-hidden="true"
+              >Oferim diagnoză gratuită mașinilor reparate la noi</span
+            >
+            <span class="marquee__text" aria-hidden="true"
+              >Oferim diagnoză gratuită mașinilor reparate la noi</span
+            >
+          </div>
+        </div>
+
+        <div class="info-container">
+          <div class="info-box">
+            <h2>Adresa</h2>
+            <p>Strada: Simion Bărnuțiu 56C</p>
+            <p>Comuna: Cuzdrioara 407260</p>
+            <p>Județ: Cluj</p>
+          </div>
+          <div class="info-box">
+            <h2>Contact</h2>
+            <p>0744.230.575</p>
+            <p>marcanto_agency@yahoo.com</p>
+          </div>
+          <div class="info-box">
+            <h2>Orar</h2>
+            <p>L - V : 8.00 - 17.00</p>
+            <p>S - D: inchis</p>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.851124672157!2d23.87414131556826!3d46.87271297914578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490d1ecfa6adf3%3A0x2cba4c63475c3b94!2sSimion%20B%C4%83rnu%C8%9Biu%2056C%2C%20Cuzdrioara%20407260!5e0!3m2!1sen!2sro!4v1699979047500!5m2!1sen!2sro"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="partners-section">
+          <h2 class="partners-title">Partenerii nostri</h2>
+          <div class="partners-logos">
+            <img src="./imgs/partners/ausburg.png" alt="Augsburg" />
+            <img src="./imgs/partners/autonet.png" alt="Autonet" />
+            <img src="./imgs/partners/autototal.png" alt="Auto Total" />
+            <img src="./imgs/partners/castrol.png" alt="Castrol" />
+            <img src="./imgs/partners/intercars.jpg" alt="Intercars" />
+            <img src="./imgs/partners/unix.png" alt="Unix" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARROW -->
+    <div class="scroll-arrow" id="scrollArrow">
+      <svg class="progress-ring" width="60" height="60">
+        <circle
+          class="progress-ring__background"
+          stroke="#ff0000"
+          stroke-width="4"
+          fill="black"
+          r="28"
+          cx="30"
+          cy="30"
+          opacity="0.3"
+        />
+        <circle
+          class="progress-ring__progress"
+          stroke="#ff0000"
+          stroke-width="4"
+          fill="transparent"
+          r="28"
+          cx="30"
+          cy="30"
+          stroke-linecap="round"
+        />
+      </svg>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2.5"
+        stroke="white"
+        class="hero-arrow"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 4v16m0 0l-6-6m6 6l6-6"
+        />
+      </svg>
+    </div>
+
+    <!-- PARALLAX SCRIPT -->
     <script>
-      $(".carousel").flipster({
-        style: "carousel",
-        spacing: -0.3,
-      });
+      function updateParallax() {
+        const sections = document.querySelectorAll(".parallax");
+        const baseWidth = 768;
+        const maxZoom = 0.07;
+        const vw = Math.max(window.innerWidth, 1);
+        const scaleFactor =
+          vw < baseWidth ? 1 + ((baseWidth - vw) / baseWidth) * maxZoom : 1;
+
+        sections.forEach((section) => {
+          const bg = section.querySelector(".bg-image");
+          const content = section.querySelector(".content");
+          const y = section.getBoundingClientRect().top;
+          const bgSpeed = 0.45;
+          const contentSpeed = 0.25;
+
+          if (section.id === "section1") {
+            bg.style.transform = `translateY(${
+              y * bgSpeed
+            }px) scale(${scaleFactor})`;
+          } else {
+            bg.style.transform = `translateY(${y * bgSpeed}px)`;
+          }
+          content.style.transform = `translateY(${y * contentSpeed}px)`;
+        });
+      }
+
+      // Run once immediately (before first paint as much as possible)
+      updateParallax();
+
+      // Then wire events
+      window.addEventListener("DOMContentLoaded", updateParallax);
+      window.addEventListener("scroll", updateParallax, { passive: true });
+      window.addEventListener("resize", updateParallax);
     </script>
 
-    <script src="script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
